@@ -1,0 +1,18 @@
+[
+  {
+    "id": "972c3a6e-0cd8-4932-9f3b-e7fed6532c27",
+    "userId": "39fade45-3e94-4ee6-944e-36bc306e4b0b",
+    "role": "client",
+    "message": "Order undefined placed successfully.",
+    "isRead": false,
+    "createdAt": "2026-04-28T15:40:34.225Z"
+  },
+  {
+    "id": "81a83f7d-826c-4726-b5e0-0642bafca832",
+    "userId": "admin",
+    "role": "admin",
+    "message": "New order undefined requires review.",
+    "isRead": false,
+    "createdAt": "2026-04-28T15:40:34.235Z"
+  }
+]
