@@ -35,7 +35,7 @@ export function AdminOrdersPage() {
         {orders.map((order) => (
           <Link key={order.id} to={`/admin/orders/${order.id}`} className="flex items-center justify-between rounded bg-white p-3 shadow-sm">
             <div className="flex flex-col">
-              <span className="font-semibold">{order.clientName}</span>
+              <span className="font-semibold">{order.clientName} — {order.serviceName}</span>
               <span className="text-xs text-gray-500">{order.id}</span>
             </div>
             <StatusBadge status={order.status} />
@@ -119,7 +119,10 @@ export function AdminOrderDetailPage() {
         </button>
       </div>
       <div className="flex items-center justify-between">
-        <StatusBadge status={order.status} />
+        <div className="flex items-center gap-3">
+          <StatusBadge status={order.status} />
+          <span className="font-bold">TND {order.totalPrice}</span>
+        </div>
         <p className="text-xs text-gray-400">{new Date(order.createdAt).toLocaleString()}</p>
       </div>
 
