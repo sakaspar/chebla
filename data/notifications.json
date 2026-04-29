@@ -1246,5 +1246,13 @@
     "message": "New message from admin on order fo6s4bzav4iwmi3sj8idsr.",
     "isRead": false,
     "createdAt": "2026-04-29T12:39:51.792Z"
+  },
+  {
+    "id": "808e38b5-4af4-4d09-acd9-cf2bd2475671",
+    "userId": "b3ebe0e0-249b-4c90-8214-506e7da13314",
+    "role": "client",
+    "message": "Order g8mxdcrc8gnbag6vlqxtgf is now delivered.",
+    "isRead": false,
+    "createdAt": "2026-04-29T14:47:26.305Z"
   }
 ]
