@@ -1214,5 +1214,37 @@
     "message": "New order undefined requires review.",
     "isRead": false,
     "createdAt": "2026-04-29T01:35:14.718Z"
+  },
+  {
+    "id": "c92049c6-963a-4efe-b9d3-5df604db008a",
+    "userId": "b3ebe0e0-249b-4c90-8214-506e7da13314",
+    "role": "client",
+    "message": "Order fo6s4bzav4iwmi3sj8idsr is now delivered.",
+    "isRead": false,
+    "createdAt": "2026-04-29T11:15:11.332Z"
+  },
+  {
+    "id": "49f452e9-c499-4c21-9ccc-439fa6bc8012",
+    "userId": "b3ebe0e0-249b-4c90-8214-506e7da13314",
+    "role": "client",
+    "message": "Order fo6s4bzav4iwmi3sj8idsr is now in_progress.",
+    "isRead": false,
+    "createdAt": "2026-04-29T11:15:28.021Z"
+  },
+  {
+    "id": "4423a243-70d6-4d64-ad35-14190d8eee0f",
+    "userId": "b3ebe0e0-249b-4c90-8214-506e7da13314",
+    "role": "client",
+    "message": "Order fo6s4bzav4iwmi3sj8idsr is now delivered.",
+    "isRead": false,
+    "createdAt": "2026-04-29T11:15:29.035Z"
+  },
+  {
+    "id": "cdde5d49-0506-44ec-a2ff-14d3f90f72f6",
+    "userId": "b3ebe0e0-249b-4c90-8214-506e7da13314",
+    "role": "client",
+    "message": "New message from admin on order fo6s4bzav4iwmi3sj8idsr.",
+    "isRead": false,
+    "createdAt": "2026-04-29T12:39:51.792Z"
   }
 ]

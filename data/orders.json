@@ -2,14 +2,23 @@
   {
     "clientId": "b3ebe0e0-249b-4c90-8214-506e7da13314",
     "serviceId": "8e7ea903-2cb1-424a-bbdf-d86d85821efe",
-    "status": "pending",
+    "status": "delivered",
     "brief": "Client Name: Firas\r\nPhone Number: .\r\nWhatsApp Contact: .\r\nProduct Description: .\r\n\r\nBrief: ",
     "attachments": [],
     "totalPrice": 300,
     "createdAt": "2026-04-29T00:46:20.994Z",
-    "updatedAt": "2026-04-29T00:46:20.994Z",
-    "messages": [],
-    "id": "fo6s4bzav4iwmi3sj8idsr"
+    "updatedAt": "2026-04-29T12:39:51.789Z",
+    "messages": [
+      {
+        "id": "4a3d664e-6e8b-4c13-baea-2b821758613c",
+        "senderId": "459665fe-1567-4dda-acbc-e27c547cd872",
+        "senderRole": "admin",
+        "message": "can you resent the docs",
+        "createdAt": "2026-04-29T12:39:51.789Z"
+      }
+    ],
+    "id": "fo6s4bzav4iwmi3sj8idsr",
+    "adminNotes": "please provide details "
   },
   {
     "clientId": "b3ebe0e0-249b-4c90-8214-506e7da13314",
