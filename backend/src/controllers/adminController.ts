@@ -6,8 +6,18 @@ import { createNotification } from "../services/notificationService";
 export const listOrders = async (req: Request, res: Response) => {
   const { status } = req.query;
   const orders = await repo.orders.all();
+  const clients = await repo.clients.all();
   const filtered = status ? orders.filter((o) => o.status === status) : orders;
-  return ok(res, filtered);
+
+  const ordersWithClientName = filtered.map((order) => {
+    const client = clients.find((c) => c.id === order.clientId);
+    return {
+      ...order,
+      clientName: client?.name ?? "Unknown"
+    };
+  });
+
+  return ok(res, ordersWithClientName);
 };
 
 export const updateOrderStatus = async (req: Request, res: Response) => {

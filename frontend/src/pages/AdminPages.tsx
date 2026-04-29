@@ -34,7 +34,11 @@ export function AdminOrdersPage() {
       <div className="space-y-2">
         {orders.map((order) => (
           <Link key={order.id} to={`/admin/orders/${order.id}`} className="flex items-center justify-between rounded bg-white p-3 shadow-sm">
-            <span>{order.id}</span><StatusBadge status={order.status} />
+            <div className="flex flex-col">
+              <span className="font-semibold">{order.clientName}</span>
+              <span className="text-xs text-gray-500">{order.id}</span>
+            </div>
+            <StatusBadge status={order.status} />
           </Link>
         ))}
       </div>
@@ -87,7 +91,10 @@ export function AdminOrderDetailPage() {
   return (
     <article className="space-y-4 rounded bg-white p-6 shadow-sm">
       <div className="flex items-center justify-between">
-        <h2 className="text-xl font-bold">Order {order.id}</h2>
+        <div className="flex flex-col">
+          <h2 className="text-xl font-bold">Order {order.id}</h2>
+          <p className="text-sm text-gray-600">{order.serviceTitle}</p>
+        </div>
         <button
           onClick={() => setShowPhone(!showPhone)}
           className="flex items-center gap-1 text-sm text-indigo-600 hover:text-indigo-800"
@@ -111,9 +118,40 @@ export function AdminOrderDetailPage() {
           )}
         </button>
       </div>
-      <StatusBadge status={order.status} />
+      <div className="flex items-center justify-between">
+        <StatusBadge status={order.status} />
+        <p className="text-xs text-gray-400">{new Date(order.createdAt).toLocaleString()}</p>
+      </div>
+
+      <div className="grid gap-4 md:grid-cols-2">
+        <div className="rounded border p-4">
+          <h3 className="mb-2 font-semibold">Client Info</h3>
+          <p className="text-sm">Name: {order.client?.name ?? "N/A"}</p>
+          <p className="text-sm">Email: {order.client?.email ?? "N/A"}</p>
+          <p className="text-sm">Phone: {showPhone ? (order.client?.phone ?? "N/A") : "********"}</p>
+        </div>
+        {order.attachments && order.attachments.length > 0 && (
+          <div className="rounded border p-4">
+            <h3 className="mb-2 font-semibold">Attachments</h3>
+            <div className="flex flex-wrap gap-2">
+              {order.attachments.map((path: string, i: number) => (
+                <a
+                  key={i}
+                  href={`/${path}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded bg-indigo-50 px-2 py-1 text-xs text-indigo-600 hover:bg-indigo-100"
+                >
+                  File {i + 1}
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+
       <div className="rounded border bg-gray-50 p-4">
-        <h3 className="mb-2 font-semibold">Client Brief</h3>
+        <h3 className="mb-2 font-semibold">Order Details</h3>
         <pre className="whitespace-pre-wrap text-sm text-gray-700">{maskPhone(order.brief)}</pre>
       </div>
       <div className="mt-4 flex gap-2">
