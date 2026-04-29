@@ -37,7 +37,15 @@ export const getOrderById = async (req: Request, res: Response) => {
   const order = orders.find((o) => o.id === req.params.id);
   if (!order) return fail(res, "Order not found", 404);
   if (req.auth?.role === "client" && order.clientId !== req.auth.userId) return fail(res, "Forbidden", 403);
-  return ok(res, order);
+
+  const client = (await repo.clients.all()).find((c) => c.id === order.clientId);
+  const service = (await repo.services.all()).find((s) => s.id === order.serviceId);
+
+  return ok(res, {
+    ...order,
+    client: client ? { name: client.name, email: client.email, phone: client.phone } : null,
+    serviceTitle: service?.title ?? "Unknown Service"
+  });
 };
 
 export const addOrderMessage = async (req: Request, res: Response) => {
