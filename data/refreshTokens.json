@@ -1,0 +1,30 @@
+[
+  {
+    "id": "a0d7af75-599b-45c5-8ecd-749c0702a9fe",
+    "userId": "459665fe-1567-4dda-acbc-e27c547cd872",
+    "role": "admin",
+    "tokenHash": "da2898f9d77fd01259f0f31daade1fc6155968a49622d2d5545932bc5038b534",
+    "expiresAt": "2026-05-05T22:53:22.308Z"
+  },
+  {
+    "id": "a33a5b35-2c9c-47c6-bbbf-5d87b018e93f",
+    "userId": "459665fe-1567-4dda-acbc-e27c547cd872",
+    "role": "admin",
+    "tokenHash": "50203ec475be38596fd5af08bb4deaef1c075776f90e447f93236063153a45f2",
+    "expiresAt": "2026-05-06T00:40:21.717Z"
+  },
+  {
+    "id": "b95e4e53-2ebc-42f6-a885-9724fead92fc",
+    "userId": "459665fe-1567-4dda-acbc-e27c547cd872",
+    "role": "admin",
+    "tokenHash": "ebadece5f7171ebeb6ead6cc45e715459e3ddad75619a12f302ff51bff2e574e",
+    "expiresAt": "2026-05-06T09:19:06.634Z"
+  },
+  {
+    "id": "09b656bc-613c-4073-a669-312090094b44",
+    "userId": "459665fe-1567-4dda-acbc-e27c547cd872",
+    "role": "admin",
+    "tokenHash": "a336f856ec4ec056e2c926151fe126fd343e0bfafbccac33c614357d95a8979e",
+    "expiresAt": "2026-05-06T09:24:54.418Z"
+  }
+]

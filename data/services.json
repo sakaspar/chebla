@@ -1,0 +1,56 @@
+[
+  {
+    "id": "8e7ea903-2cb1-424a-bbdf-d86d85821efe",
+    "title": "Video Creation Basic",
+    "category": "video",
+    "description": "Video Creation Basic package",
+    "price": 300,
+    "deliveryDays": 5,
+    "isActive": true
+  },
+  {
+    "id": "86fdd5bd-b2c9-4590-908e-40e64bd4f908",
+    "title": "Video Creation Premium",
+    "category": "video",
+    "description": "Video Creation Premium package",
+    "price": 900,
+    "deliveryDays": 10,
+    "isActive": true
+  },
+  {
+    "id": "672067ab-2736-4e55-a798-fdfa2a70e2d2",
+    "title": "Facebook Ads Starter",
+    "category": "facebook_ads",
+    "description": "Facebook Ads Starter package",
+    "price": 250,
+    "deliveryDays": 7,
+    "isActive": true
+  },
+  {
+    "id": "7d9eb72a-7adb-4ae0-b17f-a0966f23c24e",
+    "title": "Facebook Ads Growth",
+    "category": "facebook_ads",
+    "description": "Facebook Ads Growth package",
+    "price": 700,
+    "deliveryDays": 14,
+    "isActive": true
+  },
+  {
+    "id": "b596d1bf-a2d5-40dd-8031-b4b7dc619330",
+    "title": "Google SEO Local",
+    "category": "seo_google",
+    "description": "Google SEO Local package",
+    "price": 400,
+    "deliveryDays": 20,
+    "isActive": true
+  },
+  {
+    "id": "b9e1d271-9ba7-4b10-91e6-00c0c9baec45",
+    "title": "Google SEO National",
+    "category": "seo_google",
+    "description": "Google SEO National package",
+    "price": 1200,
+    "deliveryDays": 30,
+    "isActive": true
+  }
+]
